@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/FAQ.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+    <main>
+        <div id="menu-container"></div>
+
+        <div id="footer-container"></div>
+    </main>
+    <script>
+        fetch('../components/menu.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('menu-container').innerHTML = data;
+            });
+    </script>
+    <script>
+        fetch('../components/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+    <script src="https://kit.fontawesome.com/2df371b482.js" crossorigin="anonymous"></script>
+</body>
+</html>

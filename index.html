@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petronix Pet</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
     <main>
+        <div id="menu-container"></div>
         <section class="encabezado">
             <div class="texto">
                 <h1 class="border-texto">Petronix Pet</h1>
@@ -52,28 +55,44 @@
             <img src="assets/images/por-que-elegirnos.jpeg" alt="¿Por qué elegirnos?">
             <div class="beneficio-container">
                 <div class="beneficio">
-                    <h3><i class="fa-solid fa-circle-check fa-xl"></i>  Fácil de usar</h3>
+                    <h3><i class="fa-solid fa-circle-check fa-xl"></i> Fácil de usar</h3>
                     <p>Todos nuestros productos son plug & play: sin complicaciones, sin estrés.</p>
                 </div>
                 <div class="beneficio">
-                    <h3><i class="fa-solid fa-lock fa-xl"></i>  Pagos seguros</h3>
+                    <h3><i class="fa-solid fa-lock fa-xl"></i> Pagos seguros</h3>
                     <p>Protegemos tu información con cifrado SSL y plataformas confiables.</p>
                 </div>
                 <div class="beneficio">
-                    <h3><i class="fa-solid fa-bone fa-xl"></i>  Más de 2.000 clientes felices</h3>
+                    <h3><i class="fa-solid fa-bone fa-xl"></i> Más de 2.000 clientes felices</h3>
                     <p>Mascotas cuidadas, dueños tranquilos. Nuestra comunidad crece cada día.</p>
                 </div>
                 <div class="beneficio">
-                    <h3><i class="fa-solid fa-lightbulb fa-xl"></i>  Productos innovadores para el bienestar de tu mascota</h3>
+                    <h3><i class="fa-solid fa-lightbulb fa-xl"></i> Productos innovadores para el bienestar de tu
+                        mascota</h3>
                     <p>Gadgets diseñados para mejorar la vida de tus peludos.</p>
                 </div>
                 <div class="beneficio">
-                    <h3><i class="fa-solid fa-wrench fa-xl"></i>  Soporte técnico personalizado disponible 24/7</h3>
+                    <h3><i class="fa-solid fa-wrench fa-xl"></i> Soporte técnico personalizado disponible 24/7</h3>
                     <p>Siempre estamos disponibles para ayudarte antes, durante y después de tu compra.</p>
                 </div>
             </div>
         </section>
+        <div id="footer-container"></div>
     </main>
+    <script>
+        fetch('components/menu.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('menu-container').innerHTML = data;
+            });
+    </script>
+    <script>
+        fetch('components/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
     <script src="https://kit.fontawesome.com/2df371b482.js" crossorigin="anonymous"></script>
 </body>
 

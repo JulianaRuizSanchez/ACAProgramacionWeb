@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+}
+.productos{
+    margin: 0 10%;
+    padding-top: 100px;
+}
+ .productos img{
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+ }
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.tarjeta{
+    padding: 15px;
+    max-width: 200px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 15px;
+    transition: transform 0.3s ease;
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
+.tarjeta:hover {
+    transform: scale(1.1);
+}
+
+.img-producto{
+    width: 50%;
+}
+.tarjeta p{
+    font-size: 0.8em;
+    color: #2F2F2F;
+}
