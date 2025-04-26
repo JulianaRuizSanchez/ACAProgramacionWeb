@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,139 @@
     <link rel="stylesheet" href="../css/FAQ.css">
     <link rel="stylesheet" href="../css/footer.css">
 </head>
-<body>
-    <main>
-        <div id="menu-container"></div>
 
-        <div id="footer-container"></div>
+<body>
+    <div id="menu-container"></div>
+    <main>
+
+        <section class="faq">
+            <img src="../assets/images/banner-FAQ.jpg" alt="">
+            <section>
+                <h2>Sobre los productos</h2>
+                <div class="faq-section">
+                    <div class="faq-container">
+                        <div class="faq-icon">
+                            <i class="fa-solid fa-circle-check fa-xl"></i>
+                        </div>
+                        <div class="faq-item">
+                            <h3>¿Qué materiales se utilizan en los productos?</h3>
+                            <p>Nuestros productos están fabricados con materiales de alta calidad, seguros para las
+                                mascotas
+                                y duraderos.</p>
+                        </div>
+                    </div>
+                    <div class="faq-container">
+                        <div class="faq-icon">
+                            <i class="fa-solid fa-circle-check fa-xl"></i>
+                        </div>
+                        <div class="faq-item">
+                            <h3>¿Necesito WiFi para usar los productos inteligentes?</h3>
+                            <p>Sí, para funciones como el control remoto o las cámaras, es necesario que el dispositivo
+                                esté conectado a una red WiFi.</p>
+                        </div>
+                    </div>
+                    <div class="faq-container">
+                        <div class="faq-icon">
+                            <i class="fa-solid fa-circle-check fa-xl"></i>
+                        </div>
+                        <div class="faq-item">
+                            <h3>¿Los productos funcionan con cualquier tipo de mascota?</h3>
+                            <p>Sí, nuestros gadgets están pensados principalmente para perros y gatos, pero algunos
+                                también sirven para otras mascotas pequeñas.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Envíos y compras</h2>
+                <div class="faq-section">
+                    <div class="faq-container">
+                        <div class="faq-icon">
+                            <i class="fa-solid fa-circle-check fa-xl"></i>
+                        </div>
+                        <div class="faq-item">
+                            <h3>¿Hacen envíos a todo el país?</h3>
+                            <p>Sí, realizamos envíos gratis a todo el país. Puedes consultar con nosotros el precio de
+                                envío.</p>
+                        </div>
+                    </div>
+                    <div class="faq-container">
+                        <div class="faq-icon">
+                            <i class="fa-solid fa-circle-check fa-xl"></i>
+                        </div>
+                        <div class="faq-item">
+                            <h3>¿Cuánto tarda en llegar mi pedido?</h3>
+                            <p>Depende del destino, pero en promedio entre 7 y 15 días hábiles. Te enviaremos el
+                                seguimiento
+                                por email una vez despachado.</p>
+                        </div>
+                    </div>
+                    <div class="faq-container">
+                        <div class="faq-icon">
+                            <i class="fa-solid fa-circle-check fa-xl"></i>
+                        </div>
+                        <div class="faq-item">
+                            <h3>¿Puedo cancelar o modificar mi pedido?</h3>
+                            <p>Puedes cancelar o modificar tu pedido dentro de las primeras 12 horas luego de la compra.
+                                Luego de eso, ya estará en proceso de envío.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Pagos y seguridad</h2>
+                <div class="faq-section">
+                <div class="faq-container">
+                    <div class="faq-icon">
+                        <i class="fa-solid fa-circle-check fa-xl"></i>
+                    </div>
+                    <div class="faq-item">
+                        <h3>¿Es segura la compra?</h3>
+                        <p>Sí, usamos plataformas de pago 100% seguras como PayPal, Stripe y MercadoPago. Tus datos
+                            están protegidos con cifrado SSL.</p>
+                    </div>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-icon">
+                        <i class="fa-solid fa-circle-check fa-xl"></i>
+                    </div>
+                    <div class="faq-item">
+                        <h3>¿Puedo pagar en cuotas?</h3>
+                        <p>Sí, dependiendo del país y el método de pago, puedes acceder a cuotas sin interés.</p>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+            <section>
+                <h2>Otros</h2>
+                <div class="faq-section">
+                <div class="faq-container">
+                    <div class="faq-icon">
+                        <i class="fa-solid fa-circle-check fa-xl"></i>
+                    </div>
+                    <div class="faq-item">
+                        <h3>¿Cómo puedo seguir mi pedido?</h3>
+                        <p>Apenas se despache tu pedido te llegará un correo con toda la información y un botón donde
+                            puedes ingresar a ver el estado de tu pedido</p>
+                    </div>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-icon">
+                        <i class="fa-solid fa-circle-check fa-xl"></i>
+                    </div>
+                    <div class="faq-item">
+                        <h3>¿Tienen servicio de atención al cliente?</h3>
+                        <p>¡Claro! Puedes escribirnos por WhatsApp, email o por el formulario de contacto. Respondemos
+                            en menos de 24 horas.</p>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </section>
+
     </main>
+    <div id="footer-container"></div>
     <script>
         fetch('../components/menu.html')
             .then(res => res.text())
@@ -30,4 +158,5 @@
     </script>
     <script src="https://kit.fontawesome.com/2df371b482.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonio</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/testimonio.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+    <div id="menu-container"></div>
+    <main>
+        <section class="testimonios">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="testimonios-container">
+                <div class="testimonio">
+                    <p>"PetFeederPro ha cambiado mi vida. Ahora puedo alimentar a mi gato mientras estoy en el trabajo. ¡Es increíble!"</p>
+                    <h4>- Ana Gómez</h4>
+                </div>
+                <div class="testimonio">
+                    <p>"SmartPlaySnack mantiene a mi perro entretenido durante horas. ¡Le encanta!"</p>
+                    <h4>- Carlos Pérez</h4>
+                </div>
+                <div class="testimonio">
+                    <p>"LitterGuard es un salvavidas. Mi casa siempre está limpia y mi gato está feliz."</p>
+                    <h4>- Laura Martínez</h4>
+                </div>
+                <div class="testimonio">
+                    <p>"El dispensador automático de agua es perfecto para mis dos perros. Siempre tienen agua fresca, incluso cuando no estoy en casa."</p>
+                    <h4>- Roberto Sánchez</h4>
+                </div>
+                <div class="testimonio">
+                    <p>"La cámara interactiva me permite vigilar a mi gato y jugar con él mientras estoy de viaje. ¡Es una maravilla tecnológica!"</p>
+                    <h4>- Mariana López</h4>
+                </div>
+                <div class="testimonio">
+                    <p>"El servicio al cliente es excelente. Me ayudaron a configurar mi dispositivo en minutos. ¡Muy recomendado!"</p>
+                    <h4>- Javier Torres</h4>
+                </div>
+                <div class="testimonio">
+                    <p>"Desde que uso los productos de esta tienda, mi perro está más feliz y activo. ¡Gracias por pensar en nuestras mascotas!"</p>
+                    <h4>- Sofía Ramírez</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer-container"></div>
+    <script>
+        fetch('../components/menu.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('menu-container').innerHTML = data;
+            });
+    </script>
+    <script>
+        fetch('../components/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+    <script src="https://kit.fontawesome.com/2df371b482.js" crossorigin="anonymous"></script>
+</body>
+</html>

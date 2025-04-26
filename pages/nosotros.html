@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,45 @@
     <link rel="stylesheet" href="../css/nosotros.css">
     <link rel="stylesheet" href="../css/footer.css">
 </head>
-<body>
-    <main>
-        <div id="menu-container"></div>
 
-        <div id="footer-container"></div>
+<body>
+
+    <div id="menu-container"></div>
+    <main>
+        <div class="nosotros-container">
+            <img src="../assets/images/banner-sobre-nosotros.jpg" alt="">
+            <section class="nosotros">
+                <h1>Amor por las mascotas, potenciado con tecnología 💚</h1>
+                <p>En Petronix Pet, creemos que cada mascota merece una vida cómoda, feliz y llena de cuidados.</p>
+                <p>Nacimos de una simple pregunta: ¿Cómo podemos mejorar la vida de nuestros peludos cuando no estamos
+                    en casa?</p>
+                <p>Por eso, unimos dos pasiones: el amor por los animales y la innovación.</p>
+                <p>Desde 2025, ayudamos a dueños de toda Colombia a cuidar, alimentar y entretener a sus mascotas con
+                    productos inteligentes, accesibles y fáciles de usar.</p>
+            </section>
+        </div>
+        <div class="nosotros-container">
+            <section class="nosotros">
+                <ul>
+                    <li>📦 Envíos gratis y seguimiento online</li>
+                    <li>📱 Productos con apps intuitivas</li>
+                    <li>🛠️ Soporte técnico personalizado</li>
+                    <li>🐕 Probado por mascotas reales, como Clem (nuestro perrito tester oficial 🐶)</li>
+                </ul>
+            </section>
+            <img src="../assets/images/banner-diferencias.jpg" alt="¿Por qué elegirnos?">
+        </div>
+        <div class="nosotros-container">
+        <img src="../assets/images/Clem.jpg" alt="Clem">
+        <section class="nosotros">
+            <h2>¿Quién es Clem?</h2>
+            <p>Clem es nuestro perrito tester oficial. Antes de lanzar cualquier producto, lo probamos con él para
+                asegurarnos de que sea seguro y fácil de usar.</p>
+            <p>¡Así que puedes confiar en que nuestros gadgets han sido aprobados por un experto!</p>
+        </section>
+        </div>
     </main>
+    <div id="footer-container"></div>
     <script>
         fetch('../components/menu.html')
             .then(res => res.text())
@@ -30,4 +64,5 @@
     </script>
     <script src="https://kit.fontawesome.com/2df371b482.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
