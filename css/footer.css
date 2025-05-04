@@ -1,73 +1,96 @@
-footer{
-    background-color: #333;
-    color: #fff;
-    padding: 40px;
+/* Fondo oscuro para el pie de página */
+footer { 
+    background-color: #333; /* Color del texto blanco */
+    color: #fff; /* Espaciado interno */
+    padding: 40px; /* Centrado del texto */
     text-align: center;
 }
-.redes-sociales{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+
+/* Usar flexbox para alinear elementos */
+.redes-sociales { 
+    display: flex; /* Centrar los elementos horizontalmente */
+    justify-content: center; /* Espaciado entre los elementos */
+    gap: 20px; /* Margen inferior */
     margin-bottom: 20px;
 }
-.redes-sociales a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 30px;
+
+/* Color del texto blanco */
+.redes-sociales a { 
+    color: #fff; /* Quitar subrayado de los enlaces */
+    text-decoration: none; /* Tamaño de fuente grande */
+    font-size: 30px; /* Espaciado interno */
     padding: 15px;
 }
-.redes-sociales a:hover, .menu-footer a:hover{
+
+/* Cambiar color al pasar el cursor */
+.redes-sociales a:hover, .menu-footer a:hover { 
     color: #FF7F66;
 }
-.menu-footer ul{
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
+
+/* Quitar viñetas de la lista */
+.menu-footer ul { 
+    list-style: none; /* Usar flexbox para alinear elementos */
+    display: flex; /* Espaciado entre los elementos */
+    gap: 20px; /* Quitar márgenes */
+    margin: 0; /* Quitar relleno */
+    padding: 0; /* Centrar los elementos horizontalmente */
     justify-content: center;
 }
-.menu-footer a{
-    text-decoration: none;
-    color: #fff;
+
+/* Quitar subrayado de los enlaces */
+.menu-footer a { 
+    text-decoration: none; /* Color del texto blanco */
+    color: #fff; /* Texto en negrita */
     font-weight: bold;
 }
-footer p{
-    padding-top: 20px;
-    font-size: 12px;
+
+/* Espaciado superior */
+footer p { 
+    padding-top: 20px; /* Tamaño de fuente pequeño */
+    font-size: 12px; /* Color del texto gris claro */
     color: #ccc;
 }
 
+/* Estilos responsivos para pantallas medianas */
 @media (max-width: 768px) {
-    .redes-sociales {
-        flex-direction: column;
+    /* Cambiar a disposición vertical */
+    .redes-sociales { 
+        flex-direction: column; /* Reducir espaciado */
         gap: 10px;
     }
-    .redes-sociales a {
-        font-size: 24px;
+    /* Reducir tamaño de fuente */
+    .redes-sociales a { 
+        font-size: 24px; /* Reducir espaciado interno */
         padding: 10px;
     }
-    .menu-footer ul {
-        flex-direction: column;
+    /* Cambiar a disposición vertical */
+    .menu-footer ul { 
+        flex-direction: column; /* Reducir espaciado */
         gap: 10px;
     }
-    footer p {
+    /* Reducir tamaño de fuente */
+    footer p { 
         font-size: 10px;
     }
 }
 
+/* Estilos responsivos para pantallas pequeñas */
 @media (max-width: 480px) {
-    footer {
+    /* Reducir espaciado interno */
+    footer { 
         padding: 20px;
     }
-    .redes-sociales a {
-        font-size: 20px;
+    /* Reducir tamaño de fuente */
+    .redes-sociales a { 
+        font-size: 20px; /* Reducir espaciado interno */
         padding: 5px;
     }
-    .menu-footer a {
+    /* Reducir tamaño de fuente */
+    .menu-footer a { 
         font-size: 12px;
     }
-    footer p {
+    /* Reducir tamaño de fuente */
+    footer p { 
         font-size: 8px;
     }
 }

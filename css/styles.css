@@ -1,121 +1,154 @@
+/* Estilo general del cuerpo de la página */
 body{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
+    margin: 0; /* Elimina los márgenes predeterminados */
+    font-family: Arial, Helvetica, sans-serif; /* Define la fuente principal */
+    padding: 0; /* Elimina el relleno predeterminado */
 }
 
+/* Estilo del encabezado principal */
 .encabezado{
-    background-color: #8ed4be;
-    color: white;
-    text-align: center;
-
+    background-color: #8ed4be; /* Define el color de fondo del encabezado */
+    color: white; /* Define el color del texto */
+    text-align: center; /* Centra el texto */
 }
+
+/* Estilo de la línea horizontal */
 hr{
-    border: 0;
-    height: 1px;
-    background-color: #a5a5a5;
-    margin: 40px 10px;
-}
-.encabezado .texto{
-    font-size: 2em;
-    font-weight: bold;
-    margin: auto;
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-.encabezado .texto .border-texto{
-    text-shadow: 1px 1px 2px #000, 0 0 25px #000, 0 0 5px #000;
-}
-.encabezado .banner{
-    position: relative;
-}
-.banner_principal{
-    width: 70%;
-}
-.productos-destacados{
-    margin: 10px;
-}
-.productos-destacados h2{
-    text-align: center;
-    font-size: 2em;
-    color: #2F2F2F;
-}
-.flex-container{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    flex-wrap: wrap;
-}
-.tarjeta{
-    padding: 15px;
-    max-width: 350px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-.img-producto{
-    width: 30%;
-}
-.beneficios{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* gap: 10px; */
-}
-.beneficios img{
-    width: 90%;
-}
-.beneficio-container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.beneficio{
-    text-align: center;
-    font-size: 0.8em;
-    color: #2F2F2F;
-    padding: 10px;
-    max-width: 200px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-.beneficios i{
-    color: #8ed4be;
+    border: 0; /* Elimina el borde predeterminado */
+    height: 1px; /* Define la altura de la línea */
+    background-color: #a5a5a5; /* Define el color de la línea */
+    margin: 40px 10px; /* Agrega márgenes superior/inferior y laterales */
 }
 
+/* Estilo del texto dentro del encabezado */
+.encabezado .texto{
+    font-size: 2em; /* Define el tamaño de la fuente */
+    font-weight: bold; /* Aplica negrita al texto */
+    margin: auto; /* Centra el texto automáticamente */
+    position: absolute; /* Posiciona el texto de forma absoluta */
+    z-index: 1; /* Asegura que el texto esté por encima de otros elementos */
+    top: 50%; /* Posiciona el texto al 50% desde la parte superior */
+    left: 50%; /* Posiciona el texto al 50% desde la izquierda */
+    transform: translate(-50%, -50%); /* Centra el texto completamente */
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+/* Estilo del texto con borde dentro del encabezado */
+.encabezado .texto .border-texto{
+    text-shadow: 1px 1px 2px #000, 0 0 25px #000, 0 0 5px #000; /* Agrega sombras al texto */
+}
+
+/* Estilo del banner dentro del encabezado */
+.encabezado .banner{
+    position: relative; /* Posiciona el banner de forma relativa */
+}
+
+/* Estilo de la imagen principal del banner */
+.banner_principal{
+    width: 70%; /* Define el ancho de la imagen como el 70% del contenedor */
+}
+
+/* Contenedor de productos destacados */
+.productos-destacados{
+    margin: 10px; /* Agrega un margen alrededor del contenedor */
+}
+
+/* Estilo del título de productos destacados */
+.productos-destacados h2{
+    text-align: center; /* Centra el texto del título */
+    font-size: 2em; /* Define el tamaño de la fuente */
+    color: #2F2F2F; /* Define el color del texto */
+}
+
+/* Contenedor flexible para organizar elementos */
+.flex-container{
+    display: flex; /* Activa el modelo de caja flexible */
+    justify-content: space-around; /* Distribuye los elementos con espacio alrededor */
+    text-align: center; /* Centra el texto dentro de los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
+}
+
+/* Estilo de las tarjetas de productos */
+.tarjeta{
+    padding: 15px; /* Agrega espacio interno dentro de las tarjetas */
+    max-width: 350px; /* Define un ancho máximo para las tarjetas */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra a las tarjetas */
+}
+
+/* Estilo de las imágenes dentro de las tarjetas */
+.img-producto{
+    width: 30%; /* Define el ancho de las imágenes como el 30% del contenedor */
+}
+
+/* Contenedor de beneficios con diseño de cuadrícula */
+.beneficios{
+    display: grid; /* Activa el modelo de cuadrícula */
+    grid-template-columns: repeat(2, 1fr); /* Define dos columnas de igual tamaño */
+    /* gap: 10px; */ /* Espacio entre los elementos (comentado) */
+}
+
+/* Estilo de las imágenes dentro de los beneficios */
+.beneficios img{
+    width: 90%; /* Define el ancho de las imágenes como el 90% del contenedor */
+}
+
+/* Contenedor de beneficios con diseño flexible */
+.beneficio-container{
+    display: flex; /* Activa el modelo de caja flexible */
+    justify-content: space-evenly; /* Distribuye los elementos con espacio uniforme */
+    align-items: center; /* Alinea los elementos verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
+}
+
+/* Estilo de cada beneficio */
+.beneficio{
+    text-align: center; /* Centra el texto dentro del beneficio */
+    font-size: 0.8em; /* Define un tamaño de fuente pequeño */
+    color: #2F2F2F; /* Define el color del texto */
+    padding: 10px; /* Agrega espacio interno dentro del beneficio */
+    max-width: 200px; /* Define un ancho máximo para los beneficios */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra a los beneficios */
+}
+
+/* Estilo de los íconos dentro de los beneficios */
+.beneficios i{
+    color: #8ed4be; /* Define el color de los íconos */
+}
+
+/* Estilos responsivos para pantallas de hasta 768px de ancho */
 @media (max-width: 768px) {
     .banner_principal {
-        width: 90%;
+        width: 90%; /* Ajusta el ancho de la imagen principal */
     }
     .flex-container {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        align-items: center; /* Centra los elementos */
     }
     .tarjeta {
-        max-width: 100%;
-        margin: 10px 0;
+        max-width: 100%; /* Permite que las tarjetas ocupen todo el ancho disponible */
+        margin: 10px 0; /* Agrega márgenes superior e inferior */
     }
     .beneficios {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
     }
     .beneficio {
-        max-width: 100%;
-        margin: 10px 0;
+        max-width: 100%; /* Permite que los beneficios ocupen todo el ancho disponible */
+        margin: 10px 0; /* Agrega márgenes superior e inferior */
     }
 }
 
+/* Estilos responsivos para pantallas de hasta 480px de ancho */
 @media (max-width: 480px) {
     .encabezado .texto {
-        font-size: 1.5em;
+        font-size: 1.5em; /* Reduce el tamaño de la fuente del texto */
     }
     .productos-destacados h2 {
-        font-size: 1.5em;
+        font-size: 1.5em; /* Reduce el tamaño de la fuente del título */
     }
     .img-producto {
-        width: 50%;
+        width: 50%; /* Ajusta el ancho de las imágenes */
     }
     .beneficios img {
-        width: 100%;
+        width: 100%; /* Ajusta las imágenes al ancho completo del contenedor */
     }
 }

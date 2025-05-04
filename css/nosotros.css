@@ -1,73 +1,89 @@
+/* Este archivo contiene los estilos para la página "Nosotros" */
+/* Define el diseño y la apariencia de la sección de información sobre la empresa */
+
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
+    margin: 0; /* Quitar márgenes predeterminados */
+    font-family: Arial, Helvetica, sans-serif; /* Fuente principal de la página */
+    padding: 0; /* Quitar relleno predeterminado */
 }
-main{
-    padding: 100px 10%;
+
+/* Sección principal de contenido */
+main {
+    padding: 100px 10%; /* Espaciado interno del contenido principal */
 }
+
+/* Contenedor de la sección "Nosotros" */
 .nosotros {
-    /* margin: 0 10%; */
-    padding: 20px 0;
-    text-align: center;
-    max-width: 650px;
+    padding: 20px 0; /* Espaciado interno vertical */
+    text-align: center; /* Centrar el texto */
+    max-width: 650px; /* Ancho máximo del contenedor */
 }
 
+/* Título principal de la sección "Nosotros" */
 .nosotros h1 {
-    font-size: 2em;
-    color: #2F2F2F;
-    margin-bottom: 20px;
+    font-size: 2em; /* Tamaño de fuente del título principal */
+    color: #2F2F2F; /* Color del texto */
+    margin-bottom: 20px; /* Espaciado inferior */
 }
 
+/* Párrafos dentro de la sección "Nosotros" */
 .nosotros p {
-    font-size: 1.2em;
-    color: #4F4F4F;
-    margin-bottom: 15px;
+    font-size: 1.2em; /* Tamaño de fuente del párrafo */
+    color: #4F4F4F; /* Color del texto */
+    margin-bottom: 15px; /* Espaciado inferior */
 }
 
+/* Subtítulos dentro de la sección "Nosotros" */
 .nosotros h2 {
-    font-size: 2em;
-    color: #2F2F2F;
-    margin-top: 30px;
-    margin-bottom: 15px;
+    font-size: 2em; /* Tamaño de fuente del subtítulo */
+    color: #2F2F2F; /* Color del texto */
+    margin-top: 30px; /* Espaciado superior */
+    margin-bottom: 15px; /* Espaciado inferior */
 }
 
+/* Lista de elementos en la sección "Nosotros" */
 .nosotros ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    list-style: none; /* Quitar viñetas de la lista */
+    padding: 0; /* Quitar relleno */
+    margin: 0; /* Quitar márgenes */
 }
 
+/* Elementos individuales de la lista en "Nosotros" */
 .nosotros ul li {
-    font-size: 1.2em;
-    color: #4F4F4F;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    font-size: 1.2em; /* Tamaño de fuente de los elementos de la lista */
+    color: #4F4F4F; /* Color del texto */
+    margin-bottom: 10px; /* Espaciado inferior */
+    display: flex; /* Usar flexbox para alinear elementos */
+    align-items: center; /* Alinear elementos verticalmente */
+    gap: 10px; /* Espaciado entre elementos */
 }
-.nosotros-container{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-    align-items: center;
 
+/* Contenedor general para la sección "Nosotros" */
+.nosotros-container {
+    display: flex; /* Usar flexbox para alinear elementos */
+    justify-content: center; /* Centrar los elementos horizontalmente */
+    text-align: center; /* Centrar el texto */
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten en varias líneas */
+    align-items: center; /* Alinear elementos verticalmente */
 }
-main img{
-    width: 30%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
+
+/* Estilo de las imágenes dentro de la sección "Nosotros" */
+main img {
+    width: 30%; /* Ancho de la imagen */
+    height: auto; /* Ajustar altura automáticamente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra alrededor de la imagen */
+    display: block; /* Convertir la imagen en un bloque */
+    margin: 0 auto; /* Centrar la imagen horizontalmente */
+    max-width: 100%; /* Asegurar que la imagen no exceda el ancho del contenedor */
 }
+
+/* Marcadores personalizados para los elementos de la lista */
 .nosotros ul li::before {
-    content: "";
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: #8ed4be;
-    border-radius: 50%;
+    content: ""; /* Contenido vacío para el marcador */
+    display: inline-block; /* Mostrar como un elemento en línea */
+    width: 10px; /* Ancho del marcador */
+    height: 10px; /* Altura del marcador */
+    background-color: #8ed4be; /* Color del marcador */
+    border-radius: 50%; /* Forma circular */
 }

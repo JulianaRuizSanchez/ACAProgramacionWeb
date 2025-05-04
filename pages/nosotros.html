@@ -1,10 +1,15 @@
+<!-- Este archivo es la página "Nosotros" del sitio web -->
+<!-- Contiene información sobre la misión, visión y valores de la empresa, así como detalles sobre Clem, el perrito tester oficial -->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <!-- Metadatos básicos para la página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
+    <!-- Enlaces a los archivos CSS para el menú, la página "Nosotros" y el pie de página -->
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/nosotros.css">
     <link rel="stylesheet" href="../css/footer.css">
@@ -12,8 +17,10 @@
 
 <body>
 
+    <!-- Contenedor para cargar dinámicamente el menú de navegación -->
     <div id="menu-container"></div>
     <main>
+        <!-- Primera sección: Introducción sobre la empresa -->
         <div class="nosotros-container">
             <img src="../assets/images/banner-sobre-nosotros.jpg" alt="">
             <section class="nosotros">
@@ -26,6 +33,8 @@
                     productos inteligentes, accesibles y fáciles de usar.</p>
             </section>
         </div>
+
+        <!-- Segunda sección: Beneficios y características de la empresa -->
         <div class="nosotros-container">
             <section class="nosotros">
                 <ul>
@@ -37,6 +46,8 @@
             </section>
             <img src="../assets/images/banner-diferencias.jpg" alt="¿Por qué elegirnos?">
         </div>
+
+        <!-- Tercera sección: Información sobre Clem, el perrito tester oficial -->
         <div class="nosotros-container">
         <img src="../assets/images/Clem.jpg" alt="Clem">
         <section class="nosotros">
@@ -47,7 +58,11 @@
         </section>
         </div>
     </main>
+
+    <!-- Contenedor para cargar dinámicamente el pie de página -->
     <div id="footer-container"></div>
+
+    <!-- Scripts para cargar el menú y el pie de página desde archivos externos -->
     <script>
         fetch('../components/menu.html')
             .then(res => res.text())
@@ -62,6 +77,8 @@
                 document.getElementById('footer-container').innerHTML = data;
             });
     </script>
+
+    <!-- Enlace al kit de FontAwesome para íconos -->
     <script src="https://kit.fontawesome.com/2df371b482.js" crossorigin="anonymous"></script>
 </body>
 

@@ -1,43 +1,57 @@
+<!-- Este archivo es la página de testimonios del sitio web -->
+<!-- Contiene opiniones de clientes sobre los productos y servicios ofrecidos -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadatos y enlaces a hojas de estilo -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testimonio</title>
-    <link rel="stylesheet" href="../css/menu.css">
-    <link rel="stylesheet" href="../css/testimonio.css">
-    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/menu.css"> <!-- Estilos del menú de navegación -->
+    <link rel="stylesheet" href="../css/testimonio.css"> <!-- Estilos específicos de la página de testimonios -->
+    <link rel="stylesheet" href="../css/footer.css"> <!-- Estilos del pie de página -->
 </head>
 <body>
+    <!-- Contenedor para cargar el menú de navegación desde un archivo externo -->
     <div id="menu-container"></div>
+
     <main>
+        <!-- Sección principal que contiene los testimonios de los clientes -->
         <section class="testimonios">
-            <h2>Lo que dicen nuestros clientes</h2>
+            <h2>Lo que dicen nuestros clientes</h2> <!-- Título de la sección de testimonios -->
             <div class="testimonios-container">
+                <!-- Tarjeta individual de testimonio -->
                 <div class="testimonio">
                     <p>"PetFeederPro ha cambiado mi vida. Ahora puedo alimentar a mi gato mientras estoy en el trabajo. ¡Es increíble!"</p>
                     <h4>- Ana Gómez</h4>
                 </div>
+                <!-- Tarjeta individual de testimonio -->
                 <div class="testimonio">
                     <p>"SmartPlaySnack mantiene a mi perro entretenido durante horas. ¡Le encanta!"</p>
                     <h4>- Carlos Pérez</h4>
                 </div>
+                <!-- Tarjeta individual de testimonio -->
                 <div class="testimonio">
                     <p>"LitterGuard es un salvavidas. Mi casa siempre está limpia y mi gato está feliz."</p>
                     <h4>- Laura Martínez</h4>
                 </div>
+                <!-- Tarjeta individual de testimonio -->
                 <div class="testimonio">
                     <p>"El dispensador automático de agua es perfecto para mis dos perros. Siempre tienen agua fresca, incluso cuando no estoy en casa."</p>
                     <h4>- Roberto Sánchez</h4>
                 </div>
+                <!-- Tarjeta individual de testimonio -->
                 <div class="testimonio">
                     <p>"La cámara interactiva me permite vigilar a mi gato y jugar con él mientras estoy de viaje. ¡Es una maravilla tecnológica!"</p>
                     <h4>- Mariana López</h4>
                 </div>
+                <!-- Tarjeta individual de testimonio -->
                 <div class="testimonio">
                     <p>"El servicio al cliente es excelente. Me ayudaron a configurar mi dispositivo en minutos. ¡Muy recomendado!"</p>
                     <h4>- Javier Torres</h4>
                 </div>
+                <!-- Tarjeta individual de testimonio -->
                 <div class="testimonio">
                     <p>"Desde que uso los productos de esta tienda, mi perro está más feliz y activo. ¡Gracias por pensar en nuestras mascotas!"</p>
                     <h4>- Sofía Ramírez</h4>
@@ -45,21 +59,25 @@
             </div>
         </section>
     </main>
+
+    <!-- Contenedor para cargar el pie de página desde un archivo externo -->
     <div id="footer-container"></div>
+
+    <!-- Scripts para cargar componentes externos y funcionalidades adicionales -->
     <script>
         fetch('../components/menu.html')
             .then(res => res.text())
             .then(data => {
-                document.getElementById('menu-container').innerHTML = data;
+                document.getElementById('menu-container').innerHTML = data; // Inserta el menú en el contenedor
             });
     </script>
     <script>
         fetch('../components/footer.html')
             .then(res => res.text())
             .then(data => {
-                document.getElementById('footer-container').innerHTML = data;
+                document.getElementById('footer-container').innerHTML = data; // Inserta el pie de página en el contenedor
             });
     </script>
-    <script src="https://kit.fontawesome.com/2df371b482.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2df371b482.js" crossorigin="anonymous"></script> <!-- Biblioteca de íconos -->
 </body>
 </html>

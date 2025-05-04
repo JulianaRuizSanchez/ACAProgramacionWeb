@@ -1,85 +1,106 @@
+/* Estilo general del cuerpo de la página */
 body{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
-}
-main{
-    padding: 100px 0;
-}
-.faq{
-    width: 80%;
-    margin: 0 auto;
-}
-.faq img{
-    width: 40%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
- }
-.faq-title{
-    text-align: center;
-    font-size: 1.5em;
-    color: #2F2F2F;
-    margin-top: 20px;;
-}
-.faq-section{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-h2{
-    text-align: center;
-}
-.faq-container{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    align-items: center;    
-}
-.faq-icon{
-    font-size: 30px;
-    color: #8ed4be;
-}
-.faq-item{
-    padding: 15px;
-    max-width: 200px;
-    box-shadow: 2px 2px 5px #8ed4be;
-    margin: 15px;
-    transition: transform 0.3s ease;
-    border-radius: 10px; 
+    margin: 0; /* Quitar márgenes predeterminados */
+    font-family: Arial, Helvetica, sans-serif; /* Fuente principal de la página */
+    padding: 0; /* Quitar relleno predeterminado */
 }
 
+/* Espaciado principal del contenido */
+main{
+    padding: 100px 0; /* Espaciado superior e inferior del contenido principal */
+}
+
+/* Contenedor principal de la sección FAQ */
+.faq{
+    width: 80%; /* Ancho del contenedor */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+}
+
+/* Estilo de las imágenes dentro de la sección FAQ */
+.faq img{
+    width: 40%; /* Ancho de la imagen */
+    height: auto; /* Ajustar altura automáticamente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra alrededor de la imagen */
+    display: block; /* Convertir la imagen en un bloque */
+    margin: 0 auto; /* Centrar la imagen horizontalmente */
+    max-width: 100%; /* Asegurar que la imagen no exceda el ancho del contenedor */
+ }
+
+/* Título principal de la sección FAQ */
+.faq-title{
+    text-align: center; /* Centrar el texto */
+    font-size: 1.5em; /* Tamaño de fuente del título */
+    color: #2F2F2F; /* Color del texto */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Contenedor de las secciones FAQ */
+.faq-section{
+    display: flex; /* Usar flexbox para alinear elementos */
+    justify-content: space-around; /* Espaciado uniforme entre elementos */
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten en varias líneas */
+}
+
+/* Estilo general para los encabezados */
+h2{
+    text-align: center; /* Centrar el texto */
+}
+
+/* Contenedor de los elementos FAQ */
+.faq-container{
+    display: flex; /* Usar flexbox para alinear elementos */
+    justify-content: space-around; /* Espaciado uniforme entre elementos */
+    text-align: center; /* Centrar el texto */
+    align-items: center; /* Alinear elementos verticalmente */
+}
+
+/* Iconos dentro de los elementos FAQ */
+.faq-icon{
+    font-size: 30px; /* Tamaño de fuente grande */
+    color: #8ed4be; /* Color del icono */
+}
+
+/* Estilo de cada elemento individual de FAQ */
+.faq-item{
+    padding: 15px; /* Espaciado interno */
+    max-width: 200px; /* Ancho máximo del elemento */
+    box-shadow: 2px 2px 5px #8ed4be; /* Sombra alrededor del elemento */
+    margin: 15px; /* Espaciado externo */
+    transition: transform 0.3s ease; /* Transición suave para transformaciones */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos responsivos para pantallas medianas */
 @media (max-width: 768px) {
-    .faq {
+    .faq { /* Ajustar ancho del contenedor */
         width: 90%;
     }
-    .faq img {
+    .faq img { /* Ajustar ancho de las imágenes */
         width: 60%;
     }
-    .faq-section {
-        flex-direction: column;
+    .faq-section { /* Cambiar disposición a columna */
+        flex-direction: column; /* Alinear elementos al centro */
         align-items: center;
     }
-    .faq-item {
+    .faq-item { /* Ajustar ancho máximo y márgenes */
         max-width: 100%;
         margin: 10px 0;
     }
 }
 
+/* Estilos responsivos para pantallas pequeñas */
 @media (max-width: 480px) {
-    .faq img {
+    .faq img { /* Ajustar ancho de las imágenes */
         width: 80%;
     }
-    .faq-title {
+    .faq-title { /* Reducir tamaño de fuente del título */
         font-size: 1.2em;
     }
-    .faq-icon {
+    .faq-icon { /* Reducir tamaño de los iconos */
         font-size: 24px;
     }
-    .faq-item {
+    .faq-item { /* Reducir espaciado interno */
         padding: 10px;
     }
 }

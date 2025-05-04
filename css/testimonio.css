@@ -1,55 +1,70 @@
+/* Este archivo contiene los estilos para la página de testimonios */
+/* Define el diseño y la apariencia de las tarjetas de testimonios y el contenedor principal */
+
+/* Estilo general del cuerpo de la página */
 body{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
+    margin: 0; /* Elimina los márgenes predeterminados */
+    font-family: Arial, Helvetica, sans-serif; /* Define la fuente principal */
+    padding: 0; /* Elimina el relleno predeterminado */
 }
+
+/* Estilo del elemento principal de la página */
 main{
-    padding: 30px 0;
+    padding: 30px 0; /* Agrega espacio superior e inferior al contenido principal */
 }
+
+/* Contenedor principal de la sección de testimonios */
 .testimonios {
-    background-color: #f9f9f9;
-    padding: 40px;
-    text-align: center;
+    background-color: #f9f9f9; /* Define el color de fondo del contenedor */
+    padding: 40px; /* Agrega espacio interno al contenedor */
+    text-align: center; /* Centra el texto dentro del contenedor */
 }
 
+/* Estilo del título de la sección de testimonios */
 .testimonios h2 {
-    font-size: 2em;
-    color: #2F2F2F;
-    margin-bottom: 20px;
+    font-size: 2em; /* Define el tamaño de la fuente del título */
+    color: #2F2F2F; /* Define el color del texto del título */
+    margin-bottom: 20px; /* Agrega espacio inferior al título */
 }
 
+/* Contenedor flexible para organizar las tarjetas de testimonios */
 .testimonios-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: flex; /* Activa el modelo de caja flexible */
+    justify-content: space-around; /* Distribuye las tarjetas con espacio alrededor */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en varias filas */
+    gap: 20px; /* Agrega espacio entre las tarjetas */
 }
 
+/* Estilo de las tarjetas individuales de testimonios */
 .testimonio {
-    max-width: 300px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    max-width: 300px; /* Define un ancho máximo para las tarjetas */
+    padding: 20px; /* Agrega espacio interno dentro de las tarjetas */
+    background-color: #fff; /* Define el color de fondo de las tarjetas */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Agrega una sombra a las tarjetas */
+    border-radius: 10px; /* Redondea las esquinas de las tarjetas */
 }
 
+/* Estilo del texto dentro de las tarjetas de testimonios */
 .testimonio p {
-    font-style: italic;
-    color: #555;
+    font-style: italic; /* Aplica estilo de cursiva al texto */
+    color: #555; /* Define el color del texto */
 }
 
+/* Estilo del nombre o título dentro de las tarjetas de testimonios */
 .testimonio h4 {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #8ed4be;
+    margin-top: 10px; /* Agrega espacio superior al nombre o título */
+    font-weight: bold; /* Aplica negrita al texto */
+    color: #8ed4be; /* Define el color del texto */
 }
+
+/* Estilos responsivos para pantallas de hasta 768px de ancho */
 @media (max-width: 768px) {
     .testimonios-container {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        align-items: center; /* Centra los elementos dentro del contenedor */
     }
 
     .testimonio {
-        max-width: 90%;
+        max-width: 90%; /* Permite que las tarjetas ocupen el 90% del ancho disponible */
     }
 }
